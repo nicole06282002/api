@@ -1,0 +1,43 @@
+
+//AIzaSyBeZAn6a8idNnPH7HAun7VMvjUemvoVApE
+//hi my name is nicole
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>I swear I'm doing this wrong</title>
+	<link rel = "stylesheet" type = "text/css" href="main.css"> 
+	<script src = "http://code.jquery.com/jquery-1.11.0.min.js"> 
+	</script>
+
+	<script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBeZAn6a8idNnPH7HAun7VMvjUemvoVApE"> 
+	</script>"
+
+	</head>
+
+<body>
+<h1>
+	"this is so confusing but I'm supposed to write something her. this is the title over the map but i don't think this is going to work."
+
+</h1>
+<div id = "map">
+</div>
+
+	</body>
+<script type="text/javascript">
+	$(window).load(function(){
+
+		url = "https://data.cityofnewyork.us/resource/yr9a-jnts.json";
+		var center = new google.maps.LatLng(40.7128, 74.0060);
+		var mapOptions = {
+			zoom: 8,
+			center: center
+		}
+
+		var maps = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+	})
+</script>
+
+</html>
